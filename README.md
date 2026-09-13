@@ -1,21 +1,16 @@
-# Al-Mousa Corporate Website
+# Al-Mousa (MTS) Corporate Website
 
-Professional bilingual (Arabic / English) corporate profile website for **Al-Mousa for Technology and Security Systems Services Co.**
+Multi-page bilingual (AR/EN) corporate website for **Al-Mousa for Technology and Security Systems Services Co.**
 
-## Features
+Visual identity follows the 2026 corporate profile: navy `#1E2762`, red `#BC1F28`, diagonal motifs, MTS branding, and imagery from the company profile plus professional stock photography.
 
-- RTL-first Arabic experience with one-click English toggle
-- SEO meta tags, Open Graph, and Organization JSON-LD
-- Smooth section navigation, scroll progress, and reveal animations
-- Lazy-loaded visuals and `prefers-reduced-motion` support
-- Responsive layout for desktop and mobile
+## Pages
+- `index.html` — long visual homepage
+- `about.html` · `vision.html` · `goals.html` · `methodology.html`
+- `services.html` · `ecosystem.html` · `why-us.html`
+- `partners.html` · `projects.html` · `contact.html`
 
-## Run locally
-
-Open `index.html` in a browser, or serve the folder:
-
+## Run
 ```bash
 python3 -m http.server 8080
 ```
-
-Then visit `http://localhost:8080`.
