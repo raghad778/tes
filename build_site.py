@@ -196,7 +196,7 @@ home = """
           <a class="btn btn--outline" href="about.html"><span class="lang-ar">اقرأ المزيد</span><span class="lang-en">Read more</span></a>
         </div>
         <div class="media-frame angled reveal delay-1">
-          <img src="assets/images/about-header.jpg" alt="" loading="lazy" width="900" height="600">
+          <img src="assets/images/stock/smart-building.jpg" alt="" loading="lazy" width="900" height="600">
         </div>
       </div>
     </section>
@@ -286,7 +286,7 @@ home = """
       </div>
     </section>
 
-    <section class="section section--red" style="background-image:url('assets/images/goals-ops.jpg')">
+    <section class="section section--red" style="background-image:url('assets/images/stock/control-room.jpg')">
       <div class="container reveal">
         <div class="section-head">
           <p class="eyebrow"><span class="lang-ar">قيمنا الراسخة</span><span class="lang-en">Our Core Values</span></p>
@@ -348,7 +348,7 @@ write_page(
     "About Us | Al-Mousa MTS",
     "تعرف على شركة الموسى للتقنية — ذراع تقني متخصص لمجموعة الموسى من الرياض.",
     "About Al-Mousa Technology — specialized technical arm of Al-Mousa Group.",
-    hero("من نحن", "About Us", "من نحن", "About", "assets/images/about-header.jpg")
+    hero("من نحن", "About Us", "من نحن", "About", "assets/images/stock/smart-building.jpg")
     + """
     <section class="section"><div class="container split">
       <div class="prose reveal">
@@ -404,7 +404,7 @@ write_page(
     "Goals & Values | Al-Mousa MTS",
     "الأهداف الاستراتيجية والقيم الراسخة لشركة الموسى للتقنية.",
     "Strategic goals and core values of Al-Mousa Technology.",
-    hero("أهدافنا وقيمنا", "Goals & Values", "الأهداف والقيم", "Goals & Values", "assets/images/goals-ops.jpg")
+    hero("أهدافنا وقيمنا", "Goals & Values", "الأهداف والقيم", "Goals & Values", "assets/images/stock/control-room.jpg")
     + """
     <section class="section"><div class="container">
       <div class="section-head reveal"><p class="eyebrow"><span class="lang-ar">أهدافنا الاستراتيجية</span><span class="lang-en">Strategic Goals</span></p>
@@ -436,7 +436,7 @@ write_page(
     "Work Methodology | Al-Mousa MTS",
     "منهجية العمل والهيكل التنظيمي لشركة الموسى للتقنية.",
     "Work methodology and organizational structure.",
-    hero("منهجية العمل", "Work Methodology", "المنهجية", "Methodology", "assets/images/methodology.jpg")
+    hero("منهجية العمل", "Work Methodology", "المنهجية", "Methodology", "assets/images/stock/network-cables.jpg")
     + """
     <section class="section"><div class="container split">
       <div class="reveal"><p class="eyebrow"><span class="lang-ar">سر التميز</span><span class="lang-en">Secret of excellence</span></p>
@@ -467,7 +467,7 @@ write_page(
     "Services | Al-Mousa MTS",
     "خدمات شركة الموسى: استشارات، تنفيذ، صيانة وكوادر فنية.",
     "Al-Mousa services: consulting, execution, maintenance and cadres.",
-    hero("خدماتنا المتكاملة", "Our Services", "الخدمات", "Services", "assets/images/soc-control.jpg")
+    hero("خدماتنا المتكاملة", "Our Services", "الخدمات", "Services", "assets/images/stock/control-room.jpg")
     + """
     <section class="section"><div class="container">
       <div class="section-head center reveal"><p class="eyebrow"><span class="lang-ar">مجال الخدمة</span><span class="lang-en">Service Field</span></p>
@@ -543,7 +543,7 @@ write_page(
     "Partners & Clients | Al-Mousa MTS",
     "شركاء النجاح وأبرز عملاء شركة الموسى للتقنية.",
     "Success partners and prominent clients of Al-Mousa Technology.",
-    hero("شركاء النجاح والعملاء", "Partners & Clients", "الشركاء", "Partners", "assets/images/partners-handshake.jpg")
+    hero("شركاء النجاح والعملاء", "Partners & Clients", "الشركاء", "Partners", "assets/images/stock/handshake.jpg")
     + """
     <section class="section"><div class="container split">
       <div class="reveal"><p class="eyebrow"><span class="lang-ar">شركاء النجاح</span><span class="lang-en">Success Partners</span></p>
