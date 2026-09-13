@@ -1,170 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="style.css" rel="stylesheet" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1E2762">
+  <meta name="description" content="شركة الموسى للتقنية وخدمات الأنظمة الأمنية — حلول أمنية وتقنية متكاملة في الرياض.">
+  <meta name="title-ar" content="الموسى للتقنية وخدمات الأنظمة الأمنية | MTS">
+  <meta name="title-en" content="Al-Mousa Technology & Security Systems | MTS">
+  <meta name="keywords" content="الموسى للتقنية, MTS, أنظمة أمنية, الرياض, Al-Mousa Technology, security systems Saudi Arabia">
+  <link rel="canonical" href="https://al-mousa.sa/index.html">
+  <meta property="og:title" content="الموسى للتقنية وخدمات الأنظمة الأمنية | MTS">
+  <meta property="og:description" content="شركة الموسى للتقنية وخدمات الأنظمة الأمنية — حلول أمنية وتقنية متكاملة في الرياض.">
+  <meta property="og:type" content="website">
+  <title>الموسى للتقنية وخدمات الأنظمة الأمنية | MTS</title>
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Product list with cart</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Al-Mousa for Technology and Security Systems Services Co.","alternateName":"شركة الموسى للتقنية وخدمات الأنظمة الأمنية","url":"https://al-mousa.sa/","logo":"assets/brand/logo-mts.png","foundingDate":"2021","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"},"parentOrganization":{"@type":"Organization","name":"Al-Mousa Group Co. Ltd."}}
+  </script>
 </head>
 <body>
-  <div class="cont" id="contid"></div>
-  <div class="container">
-        <h2 class="heading">Desserts</h2>         
-      <br>
-      
-        <div class="box item1" >          
-          <img class="image" id="im" src="assets/images/image-waffle-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('1')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="1" ><button id="inc" onclick="increment('1')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('1')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Waffle</h5>
-          <p>Waffle with Berries</p>
-          <p1>$<span>6.50</span></p1>         
-        </div>
-        <div class="box item2" >
-      <img class="image" id="im" src="assets/images/image-creme-brulee-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('2')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="2" ><button id="inc" onclick="increment('2')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('2')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Crème Brûlée</h5>
-          <p>Vanilla Bean Crème Brûlée</p>
-          <p1>$<span>7.00</span></p1>
-        </div>
-        <div class="box item3">
-          <img class="image" id="im" src="assets/images/image-macaron-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('3')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="3" ><button id="inc" onclick="increment('3')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('3')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Macaron</h5>
-          <p>Macaron Mix of Five</p>
-          <p1>$<span>8.00</span></p1>
-        </div>
-        <div class="box item4">
-          <img class="image" id="im" src="assets/images/image-tiramisu-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('4')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="4" ><button id="inc" onclick="increment('4')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('4')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Tiramisu</h5>
-          <p>Classic Tiramisu</p>
-          <p1>$<span> 5.50</span></p1>
-        </div>
-        <div class="box item5">
-          <img class="image" id="im" src="assets/images/image-baklava-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('5')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="5" ><button id="inc" onclick="increment('5')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('5')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Baklava</h5>
-          <p>Pistachio Baklava</p>
-          <p1>$<span>4.00</span></p1>
-        </div>
-        <div class="box item6">
-          <img class="image" id="im" src="assets/images/image-meringue-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('6')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="6" ><button id="inc" onclick="increment('6')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('6')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Pie</h5>
-          <p>Lemon Meringue Pie</p>
-          <p1>$<span>5.00</span></p1>
-        </div>
-        <div class="box item7">
-          <img class="image" id="im" src="assets/images/image-cake-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('7')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="7" ><button id="inc" onclick="increment('7')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('7')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Cake</h5>
-          <p> Red Velvet Cake</p>
-          <p1>$<span>4.50</span></p1>
-        </div>
-        <div class="box item8">
-          <img class="image" id="im" src="assets/images/image-brownie-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('8')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="8" ><button id="inc" onclick="increment('8')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('8')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Brownie</h5>
-          <p>Salted Caramel Brownie</p>
-          <p1>$<span>4.50</span></p1>
-        
-        </div>
-        <div class="box item9">
-          <img class="image" id="im" src="assets/images/image-panna-cotta-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('9')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="9" ><button id="inc" onclick="increment('9')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('9')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Panna Cotta</h5>
-          <p>Vanilla Panna Cotta</p>
-          <p1>$<span> 6.50</span></p1>
-        </div>
-      
-
-  <div class="confirm" id="finconf">    
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 32.121L13.5 24.6195L15.6195 22.5L21 27.879L32.3775 16.5L34.5 18.6225L21 32.121Z" fill="#1EA575"/>
-        <path d="M24 3C19.8466 3 15.7865 4.23163 12.333 6.53914C8.8796 8.84665 6.18798 12.1264 4.59854 15.9636C3.0091 19.8009 2.59323 24.0233 3.40352 28.0969C4.21381 32.1705 6.21386 35.9123 9.15077 38.8492C12.0877 41.7861 15.8295 43.7862 19.9031 44.5965C23.9767 45.4068 28.1991 44.9909 32.0364 43.4015C35.8736 41.812 39.1534 39.1204 41.4609 35.667C43.7684 32.2135 45 28.1534 45 24C45 18.4305 42.7875 13.089 38.8493 9.15076C34.911 5.21249 29.5696 3 24 3ZM24 42C20.4399 42 16.9598 40.9443 13.9997 38.9665C11.0397 36.9886 8.73256 34.1774 7.37018 30.8883C6.0078 27.5992 5.65134 23.98 6.34587 20.4884C7.04041 16.9967 8.75474 13.7894 11.2721 11.2721C13.7894 8.75473 16.9967 7.0404 20.4884 6.34587C23.98 5.65133 27.5992 6.00779 30.8883 7.37017C34.1774 8.73255 36.9886 11.0397 38.9665 13.9997C40.9443 16.9598 42 20.4399 42 24C42 28.7739 40.1036 33.3523 36.7279 36.7279C33.3523 40.1036 28.7739 42 24 42Z" fill="#1EA575"/>
-        </svg>
-        
-      <h1>Order Confirmed</h1>
-      <p3>We hope you enjoy your food!</p3>
-      <div class="totconf">
-      <div class="confcart" id="confid">  
-        
-       
-      </div>
-      <h4>Order Total</h4><p4 id="tot">$<span>0</span></p4>
-    </div>
-    <a href="index.html"><button id="storder"><p6>Start New Order</p6></button></a>
-  </div>
-  
-    <div class="cart" id="cartid">
-      <h2 style="color:hsl(14, 86%, 42%)">Your Cart (<span>0</span>)</h2>  
-      <div class="incart" id="incar">   
-      </div>    
-      <svg class="carg" id="cargid" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="none" viewBox="0 0 128 128"><path fill="#260F08" d="M8.436 110.406c0 1.061 4.636 2.079 12.887 2.829 8.252.75 19.444 1.171 31.113 1.171 11.67 0 22.861-.421 31.113-1.171 8.251-.75 12.887-1.768 12.887-2.829 0-1.061-4.636-2.078-12.887-2.828-8.252-.75-19.443-1.172-31.113-1.172-11.67 0-22.861.422-31.113 1.172-8.251.75-12.887 1.767-12.887 2.828Z" opacity=".15"/><path fill="#87635A" d="m119.983 24.22-47.147 5.76 4.32 35.36 44.773-5.467a2.377 2.377 0 0 0 2.017-1.734c.083-.304.104-.62.063-.933l-4.026-32.986Z"/><path fill="#AD8A85" d="m74.561 44.142 47.147-5.754 1.435 11.778-47.142 5.758-1.44-11.782Z"/><path fill="#CAAFA7" d="M85.636 36.78a2.4 2.4 0 0 0-2.667-2.054 2.375 2.375 0 0 0-2.053 2.667l.293 2.347a3.574 3.574 0 0 1-7.066.88l-1.307-10.667 14.48-16.88c19.253-.693 34.133 3.6 35.013 10.8l1.28 10.533a1.172 1.172 0 0 1-1.333 1.307 4.696 4.696 0 0 1-3.787-4.08 2.378 2.378 0 1 0-4.72.587l.294 2.346a2.389 2.389 0 0 1-.484 1.755 2.387 2.387 0 0 1-1.583.899 2.383 2.383 0 0 1-1.755-.484 2.378 2.378 0 0 1-.898-1.583 2.371 2.371 0 0 0-1.716-2.008 2.374 2.374 0 0 0-2.511.817 2.374 2.374 0 0 0-.493 1.751l.293 2.373a4.753 4.753 0 0 1-7.652 4.317 4.755 4.755 0 0 1-1.788-3.17l-.427-3.547a2.346 2.346 0 0 0-2.666-2.053 2.4 2.4 0 0 0-2.08 2.667l.16 1.173a2.378 2.378 0 1 1-4.72.587l-.107-1.28Z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".974" d="m81.076 28.966 34.187-4.16"/><path fill="#87635A" d="M7.45 51.793c-.96 8.48 16.746 17.44 39.466 19.947 22.72 2.506 42.08-2.16 43.04-10.667l-3.947 35.493c-.96 8.48-20.24 13.334-43.04 10.667S2.463 95.74 3.423 87.18l4.026-35.387Z"/><path fill="#AD8A85" d="M5.823 65.953c-.96 8.453 16.746 17.44 39.573 20.027 22.827 2.586 42.053-2.187 43.013-10.667L87.076 87.1c-.96 8.48-20.24 13.333-43.04 10.666C21.236 95.1 3.53 86.22 4.49 77.74l1.334-11.787Z"/><path fill="#CAAFA7" d="M60.836 42.78a119.963 119.963 0 0 0-10.347-1.627c-24-2.667-44.453 1.893-45.333 10.373l-2.133 18.88a3.556 3.556 0 1 0 7.066.8 3.574 3.574 0 1 1 7.094.8l-.8 7.094a5.93 5.93 0 1 0 11.786 1.333 3.556 3.556 0 0 1 7.067.8l-.267 2.347a3.573 3.573 0 0 0 7.094.826l.133-1.2a5.932 5.932 0 1 1 11.787 1.36l-.4 3.52a3.573 3.573 0 0 0 7.093.827l.933-8.267a1.174 1.174 0 0 1 1.307-.906 1.146 1.146 0 0 1 1.04 1.306 5.947 5.947 0 0 0 11.813 1.334l.534-4.72a3.556 3.556 0 0 1 7.066.8 3.573 3.573 0 0 0 7.094.826l1.786-15.546a2.373 2.373 0 0 0-2.08-2.667L44.143 55.74l16.693-12.96Z"/><path fill="#87635A" d="m59.156 57.66 1.68-14.88-16.827 13.173 15.147 1.707Z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".974" d="M9.796 52.06c-.667 5.866 16.24 12.586 37.733 15.04 14.774 1.68 27.867.906 34.854-1.654"/></svg>
-      <h5 id="ctxt">Your added items will appear here</h5>
-      <div class="foot" id="footid">
-        <p2 class="ord">Order Total</p2><p4>$<span>0</span></p4>
-        <div class="carb"><p2><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><path fill="#1EA575" d="M8 18.75H6.125V17.5H8V9.729L5.803 8.41l.644-1.072 2.196 1.318a1.256 1.256 0 0 1 .607 1.072V17.5A1.25 1.25 0 0 1 8 18.75Z"/><path fill="#1EA575" d="M14.25 18.75h-1.875a1.25 1.25 0 0 1-1.25-1.25v-6.875h3.75a2.498 2.498 0 0 0 2.488-2.747 2.594 2.594 0 0 0-2.622-2.253h-.99l-.11-.487C13.283 3.56 11.769 2.5 9.875 2.5a3.762 3.762 0 0 0-3.4 2.179l-.194.417-.54-.072A1.876 1.876 0 0 0 5.5 5a2.5 2.5 0 1 0 0 5v1.25a3.75 3.75 0 0 1 0-7.5h.05a5.019 5.019 0 0 1 4.325-2.5c2.3 0 4.182 1.236 4.845 3.125h.02a3.852 3.852 0 0 1 3.868 3.384 3.75 3.75 0 0 1-3.733 4.116h-2.5V17.5h1.875v1.25Z"/></svg>
-          This is a <p3 style="font-weight: bold;">carbon-neutral</p3> delivery</p2></div>
-          <button class="footbtn" onclick="conforder()">Confirm Order</button>
+  <a class="skip-link" href="#main"><span class="lang-ar">تخطي إلى المحتوى</span><span class="lang-en">Skip to content</span></a>
+  <div class="progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <img src="assets/brand/logo-mts.png" alt="MTS" width="120" height="48" decoding="async">
+        <span class="brand__text">
+          <strong class="lang-ar">الموسى للتقنية</strong>
+          <strong class="lang-en">AL-MOUSA MTS</strong>
+          <small class="lang-ar">وخدمات الأنظمة الأمنية</small>
+          <small class="lang-en">Technology &amp; Security</small>
+        </span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+          <a href="index.html" class="is-active"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a>
+          <a href="about.html"><span class="lang-ar">من نحن</span><span class="lang-en">About</span></a>
+          <a href="vision.html"><span class="lang-ar">الرؤية</span><span class="lang-en">Vision</span></a>
+          <a href="goals.html"><span class="lang-ar">الأهداف</span><span class="lang-en">Goals</span></a>
+          <a href="methodology.html"><span class="lang-ar">المنهجية</span><span class="lang-en">Method</span></a>
+          <a href="services.html"><span class="lang-ar">الخدمات</span><span class="lang-en">Services</span></a>
+          <a href="ecosystem.html"><span class="lang-ar">المنظومة</span><span class="lang-en">Ecosystem</span></a>
+          <a href="why-us.html"><span class="lang-ar">لماذا نحن</span><span class="lang-en">Why Us</span></a>
+          <a href="partners.html"><span class="lang-ar">الشركاء</span><span class="lang-en">Partners</span></a>
+          <a href="projects.html"><span class="lang-ar">المشاريع</span><span class="lang-en">Projects</span></a>
+          <a href="contact.html"><span class="lang-ar">تواصل</span><span class="lang-en">Contact</span></a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Language">
+          <span class="lang-ar">EN</span><span class="lang-en">عربي</span>
+        </button>
+        <a class="btn btn--sm btn--red" href="contact.html">
+          <span class="lang-ar">تواصل معنا</span><span class="lang-en">Contact Us</span>
+        </a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
-  </div>
-  <div id="carticon" onclick="cartside('cartid')">
-    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#fff" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"></path><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"></path></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"></path></clipPath></defs></svg>
+  </header>
+  <main id="main">
 
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/abhi6174">Abhishek</a>.
-  </div>
-  <script  src="script.js"></script>
+    <section class="home-hero">
+      <div class="home-hero__media" style="background-image:url('assets/images/hero-riyadh.jpg')" role="img" aria-label="Riyadh skyline"></div>
+      <div class="home-hero__stripes" aria-hidden="true"></div>
+      <div class="home-hero__content reveal">
+        <p class="home-hero__meta">
+          <span class="lang-ar">الرياض · المملكة العربية السعودية · الملف المؤسسي ٢٠٢٦</span>
+          <span class="lang-en">Riyadh · Kingdom of Saudi Arabia · Corporate Profile 2026</span>
+        </p>
+        <h1>
+          <span class="lang-ar">شركة الموسى للتقنية<br>وخدمات الأنظمة الأمنية</span>
+          <span class="lang-en">AL-MOUSA FOR TECHNOLOGY<br>AND SECURITY SYSTEMS SERVICES CO</span>
+        </h1>
+        <p class="home-hero__tag">
+          <span class="lang-ar">إحدى شركات مجموعة الموسى المحدودة — نصوغ دروع حماية رقمية وفيزيائية مبتكرة لاستدامة الأعمال وتأمين الأصول الوطنية الكبرى.</span>
+          <span class="lang-en">A Subsidiary of Al-Mousa Group Co. Ltd. — forging innovative digital and physical protection shields for business sustainability and national assets.</span>
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn--red" href="about.html"><span class="lang-ar">اكتشف قصتنا</span><span class="lang-en">Discover Our Story</span></a>
+          <a class="btn btn--ghost" href="services.html"><span class="lang-ar">خدماتنا المتكاملة</span><span class="lang-en">Our Solutions</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>2021</strong><span class="lang-ar">سنة التأسيس</span><span class="lang-en">Founded</span></div>
+          <div><strong>2030</strong><span class="lang-ar">رؤية المملكة</span><span class="lang-en">Vision aligned</span></div>
+          <div><strong>KSA</strong><span class="lang-ar">تغطية وطنية</span><span class="lang-en">Nationwide</span></div>
+          <div><strong>MTS</strong><span class="lang-ar">هوية تقنية أمنية</span><span class="lang-en">Security tech</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow"><span class="lang-ar">من نحن</span><span class="lang-en">About Us</span></p>
+          <h2><span class="lang-ar">ذراع تقني متخصص من قلب الرياض</span><span class="lang-en">A specialized technical arm from Riyadh</span></h2>
+          <p class="lang-ar">انطلقت شركة الموسى للتقنية وخدمات الأنظمة الأمنية عام ٢٠٢١ من قلب العاصمة الرياض كذراع تقني متخصص لمجموعة الموسى المحدودة. تحت قيادة المؤسس المهندس عبد الكريم الموسى نقود قطاع الحلول الأمنية المتكاملة والبنية التحتية المتقدمة في السوق السعودي.</p>
+          <p class="lang-en">Launched in 2021 from Riyadh as a specialized technical arm of Al-Mousa Group. Under Eng. Abdulkarim Al-Mousa we lead integrated security solutions and advanced infrastructure in the Saudi market.</p>
+          <p class="lang-ar">نعتز بمساهمتنا في صياغة ملامح رؤية المملكة ٢٠٣٠ عبر المشاركة في تأمين مشاريع وطنية عملاقة مثل أمالا ومشاريع البحر الأحمر.</p>
+          <p class="lang-en">We proudly contribute to Vision 2030 through mega projects such as AMAALA and the Red Sea projects.</p>
+          <a class="btn btn--outline" href="about.html"><span class="lang-ar">اقرأ المزيد</span><span class="lang-en">Read more</span></a>
+        </div>
+        <div class="media-frame angled reveal delay-1">
+          <img src="assets/images/about-header.jpg" alt="" loading="lazy" width="900" height="600">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="lang-ar">خدماتنا</span><span class="lang-en">Services</span></p>
+          <h2><span class="lang-ar">من الدراسة إلى التشغيل عبر نافذة واحدة</span><span class="lang-en">From study to operation — one window</span></h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature reveal"><h3><span class="lang-ar">الاستشارات والدراسات</span><span class="lang-en">Consulting &amp; Studies</span></h3><p class="lang-ar">مسح ميداني، تحليل متطلبات، تصميم أنظمة، مخططات تنفيذية وBOQ دقيقة.</p><p class="lang-en">Field surveys, requirements analysis, system design, blueprints and precise BOQs.</p></article>
+          <article class="feature reveal delay-1"><h3><span class="lang-ar">التنفيذ والتركيب</span><span class="lang-en">Execution &amp; Installation</span></h3><p class="lang-ar">إدارة ميدانية، تمديدات متقنة، وبنية تحتية متكاملة بأعلى كفاءة.</p><p class="lang-en">Field management, masterful cabling, and integrated infrastructure.</p></article>
+          <article class="feature reveal delay-2"><h3><span class="lang-ar">الصيانة والدعم</span><span class="lang-en">Maintenance &amp; Support</span></h3><p class="lang-ar">صيانة دورية، دعم فني مستمر، إدارة أعطال طارئة وتحديثات برمجية.</p><p class="lang-en">Periodic maintenance, continuous support, emergency response and updates.</p></article>
+          <article class="feature reveal delay-3"><h3><span class="lang-ar">كوادر فنية متخصصة</span><span class="lang-en">Specialized Cadres</span></h3><p class="lang-ar">مهندسون وفنيون وفرق تنفيذ مدربة للدعم الميداني حسب طبيعة كل مشروع.</p><p class="lang-en">Engineers, technicians and trained teams tailored to each project.</p></article>
+        </div>
+        <div style="text-align:center;margin-top:2rem" class="reveal">
+          <a class="btn btn--red" href="services.html"><span class="lang-ar">استعرض كل الخدمات</span><span class="lang-en">View all services</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="lang-ar">المنظومة التقنية</span><span class="lang-en">Technical Ecosystem</span></p>
+          <h2><span class="lang-ar">لا نبيع منتجات مجردة — نوطّن حلولاً ذكية</span><span class="lang-en">We localize smart solutions</span></h2>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <div class="card__img"><img src="assets/images/stock/network-cables.jpg" alt="" loading="lazy" width="700" height="440"></div>
+            <div class="card__body"><h3><span class="lang-ar">البنية التحتية والشبكات</span><span class="lang-en">Infrastructure &amp; Networking</span></h3><p class="lang-ar">ألياف ضوئية، كابلات نحاسية، سويتشات، جدار ناري وأنظمة IP.</p><p class="lang-en">Fiber optics, copper cabling, switches, firewalls and IP systems.</p><a class="card__link" href="ecosystem.html"><span class="lang-ar">التفاصيل</span><span class="lang-en">Details</span></a></div>
+          </article>
+          <article class="card reveal delay-1">
+            <div class="card__img"><img src="assets/images/security-shield.jpg" alt="" loading="lazy" width="700" height="440"></div>
+            <div class="card__body"><h3><span class="lang-ar">الأمن والحماية</span><span class="lang-en">Security &amp; Protection</span></h3><p class="lang-ar">كاميرات ذكية، تحكم دخول، بصمة، إنذار مبكر وحماية بيانات.</p><p class="lang-en">Smart cameras, access control, biometrics, early warning and data protection.</p><a class="card__link" href="ecosystem.html"><span class="lang-ar">التفاصيل</span><span class="lang-en">Details</span></a></div>
+          </article>
+          <article class="card reveal delay-2">
+            <div class="card__img"><img src="assets/images/stock/datacenter-aisle.jpg" alt="" loading="lazy" width="700" height="440"></div>
+            <div class="card__body"><h3><span class="lang-ar">مراكز البيانات والطاقة</span><span class="lang-en">Data Centers &amp; Power</span></h3><p class="lang-ar">غرف بيانات حرجة، تبريد دقيق، UPS، ATS والطاقة الشمسية.</p><p class="lang-en">Critical data rooms, precision cooling, UPS, ATS and solar energy.</p><a class="card__link" href="ecosystem.html"><span class="lang-ar">التفاصيل</span><span class="lang-en">Details</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split split--rev">
+        <div class="media-frame reveal"><img src="assets/images/stock/control-room.jpg" alt="" loading="lazy" width="900" height="600"></div>
+        <div class="reveal delay-1">
+          <p class="eyebrow"><span class="lang-ar">لماذا يختارنا عملاؤنا</span><span class="lang-en">Why Clients Choose Us</span></p>
+          <h2><span class="lang-ar">موثوقية عالمية وخبرة ميدانية وطنية</span><span class="lang-en">Global reliability with national expertise</span></h2>
+          <div class="quote-band" style="margin:1.5rem 0;clip-path:none">
+            <p class="lang-ar">نجمع بين موثوقية الشراكات العالمية والخبرة الميدانية الوطنية لنمنح منشأتك حماية تتوارثها الأجيال.</p>
+            <p class="lang-en">We combine global partnership reliability with national field expertise — protection inherited by generations.</p>
+          </div>
+          <ul class="checklist">
+            <li><span class="lang-ar">شراكات واعتمادات عالمية موثوقة</span><span class="lang-en">Trusted global partnerships &amp; accreditations</span></li>
+            <li><span class="lang-ar">سجل حافل وإنجازات مثبتة</span><span class="lang-en">Proven track record of success</span></li>
+            <li><span class="lang-ar">علاقات مستدامة ودعم مستمر</span><span class="lang-en">Sustained relationships &amp; continuous support</span></li>
+            <li><span class="lang-ar">حلول هندسية تغطي دورة حياة المشروع</span><span class="lang-en">End-to-end engineering across the project lifecycle</span></li>
+          </ul>
+          <a class="btn btn--outline" href="why-us.html" style="margin-top:1rem"><span class="lang-ar">اعرف المزيد</span><span class="lang-en">Learn more</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="lang-ar">أبرز المشاريع</span><span class="lang-en">Key Projects</span></p>
+          <h2><span class="lang-ar">حيث تلتقي السرعة بالأمان المطلق</span><span class="lang-en">Where speed meets absolute safety</span></h2>
+        </div>
+        <div class="project-rail">
+          <a class="project-tile reveal" href="projects.html">
+            <img src="assets/images/airport-security.jpg" alt="" loading="lazy" width="800" height="500">
+            <div class="project-tile__body"><h3><span class="lang-ar">مشاريع المطارات</span><span class="lang-en">Airport Projects</span></h3><p class="lang-ar">الرياض · الدمام · جازان</p><p class="lang-en">Riyadh · Dammam · Jazan</p></div>
+          </a>
+          <a class="project-tile reveal delay-1" href="projects.html">
+            <img src="assets/images/banking.jpg" alt="" loading="lazy" width="800" height="500">
+            <div class="project-tile__body"><h3><span class="lang-ar">مشاريع البنوك</span><span class="lang-en">Banking Projects</span></h3><p class="lang-ar">حماية الأصول الرقمية والمعاملات المليارية</p><p class="lang-en">Securing digital assets &amp; multi-billion transactions</p></div>
+          </a>
+          <a class="project-tile reveal delay-2" href="projects.html">
+            <img src="assets/images/government.jpg" alt="" loading="lazy" width="800" height="500">
+            <div class="project-tile__body"><h3><span class="lang-ar">المشاريع الحكومية</span><span class="lang-en">Government Projects</span></h3><p class="lang-ar">تأمين البنية التحتية لسيادة الوطن</p><p class="lang-en">Securing the nation's infrastructure</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--red" style="background-image:url('assets/images/goals-ops.jpg')">
+      <div class="container reveal">
+        <div class="section-head">
+          <p class="eyebrow"><span class="lang-ar">قيمنا الراسخة</span><span class="lang-en">Our Core Values</span></p>
+          <h2><span class="lang-ar">محرك أداء يومي… لا شعارات مكتوبة</span><span class="lang-en">A daily performance engine — not slogans</span></h2>
+        </div>
+        <div class="pillars">
+          <article class="pillar"><h3><span class="lang-ar">الإخلاص في العمل</span><span class="lang-en">Dedication</span></h3><p class="lang-ar">مسؤولية والتزام يفوق تطلعات شركائنا.</p><p class="lang-en">Responsibility exceeding partners' expectations.</p></article>
+          <article class="pillar"><h3><span class="lang-ar">الصدق والشفافية</span><span class="lang-en">Honesty</span></h3><p class="lang-ar">وضوح ومصداقية لبناء علاقات مستدامة.</p><p class="lang-en">Clarity and credibility for lasting relationships.</p></article>
+          <article class="pillar"><h3><span class="lang-ar">التعاون والتكامل</span><span class="lang-en">Collaboration</span></h3><p class="lang-ar">روح فريق واحد لمخرجات أفضل.</p><p class="lang-en">One team spirit for better outcomes.</p></article>
+          <article class="pillar"><h3><span class="lang-ar">الإتقان والتميز</span><span class="lang-en">Excellence</span></h3><p class="lang-ar">تنفيذ دقيق وفق أفضل المعايير.</p><p class="lang-en">Precise execution to the highest standards.</p></article>
+        </div>
+        <div style="margin-top:2rem"><a class="btn btn--ghost" href="goals.html"><span class="lang-ar">الأهداف والقيم</span><span class="lang-en">Goals &amp; Values</span></a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="lang-ar">شركاء النجاح</span><span class="lang-en">Success Partners</span></p>
+          <h2><span class="lang-ar">شراكات استراتيجية مع نخبة الموردين</span><span class="lang-en">Strategic partnerships with elite suppliers</span></h2>
+        </div>
+        <div class="logo-wall reveal">
+          <figure>Atronika</figure><figure>Atis</figure><figure>Bright Wires</figure>
+          <figure>Saudisoft</figure><figure>City Systems</figure><figure>Logicom</figure>
+        </div>
+        <div style="text-align:center;margin-top:2rem" class="reveal">
+          <a class="btn btn--outline" href="partners.html"><span class="lang-ar">الشركاء والعملاء</span><span class="lang-en">Partners &amp; Clients</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container reveal">
+        <div class="cta-banner">
+          <div>
+            <h2><span class="lang-ar">جاهزون لتأمين منشأتك؟</span><span class="lang-en">Ready to secure your facility?</span></h2>
+            <p class="lang-ar">تواصل مع فريق الموسى للتقنية لنصمم لك منظومة حماية متكاملة.</p>
+            <p class="lang-en">Contact the Al-Mousa Technology team to design an integrated protection ecosystem.</p>
+          </div>
+          <a class="btn btn--red" href="contact.html"><span class="lang-ar">ابدأ الحوار</span><span class="lang-en">Start a conversation</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/brand/logo-mts.png" alt="" width="88" height="40" loading="lazy">
+        <div>
+          <strong class="lang-ar">شركة الموسى للتقنية وخدمات الأنظمة الأمنية</strong>
+          <strong class="lang-en">Al-Mousa for Technology and Security Systems Services Co.</strong>
+          <p class="lang-ar">إحدى شركات مجموعة الموسى المحدودة · الرياض</p>
+          <p class="lang-en">A Subsidiary of Al-Mousa Group Co. Ltd. · Riyadh</p>
+        </div>
+      </div>
+      <div>
+        <h3><span class="lang-ar">روابط</span><span class="lang-en">Links</span></h3>
+        <div class="footer-links">
+          <a href="about.html"><span class="lang-ar">من نحن</span><span class="lang-en">About</span></a>
+          <a href="services.html"><span class="lang-ar">الخدمات</span><span class="lang-en">Services</span></a>
+          <a href="projects.html"><span class="lang-ar">المشاريع</span><span class="lang-en">Projects</span></a>
+          <a href="partners.html"><span class="lang-ar">الشركاء</span><span class="lang-en">Partners</span></a>
+        </div>
+      </div>
+      <div>
+        <h3><span class="lang-ar">تواصل</span><span class="lang-en">Contact</span></h3>
+        <div class="footer-links">
+          <span class="lang-ar">الرياض — المملكة العربية السعودية</span>
+          <span class="lang-en">Riyadh — Kingdom of Saudi Arabia</span>
+          <a href="contact.html"><span class="lang-ar">صفحة التواصل</span><span class="lang-en">Contact page</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="lang-ar">© 2026 شركة الموسى للتقنية وخدمات الأنظمة الأمنية.</p>
+      <p class="lang-en">© 2026 Al-Mousa for Technology and Security Systems Services Co.</p>
+      <p>Corporate Profile 2026 · MTS</p>
+    </div>
+  </footer>
+  <button type="button" class="to-top" id="to-top" aria-label="Top">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
