@@ -1,159 +1,139 @@
-var add=document.getElementsByClassName('add');
-var cart=document.getElementById('cartid');
-var total=0,chbut;
-var incart=document.getElementById('incar');
-let out=[0,0,0,0,0,0,0,0,0,0];
-let cost=[0,0,0,0,0,0,0,0,0,0];
-let pdt=['','','','','','','','','','','']
-let price=[0,0,0,0,0,0,0,0,0,0];
-let butct=[0,0,0,0,0,0,0,0,0,0];
-let imadd=["",
-"assets/images/image-waffle-desktop.jpg",
-"assets/images/image-creme-brulee-desktop.jpg",
-"assets/images/image-macaron-desktop.jpg",
-"assets/images/image-tiramisu-desktop.jpg",
-"assets/images/image-baklava-desktop.jpg",
-"assets/images/image-meringue-desktop.jpg",
-"assets/images/image-cake-desktop.jpg",
-"assets/images/image-brownie-desktop.jpg",
-"assets/images/image-panna-cotta-desktop.jpg",
-];
-window.onload=function(){
-    if(window.innerWidth<775){        
-    document.getElementById('carticon').click();
-    }
-}
-function displaybut(b){
-    var k= document.getElementById(b)
-    var parent=k.parentElement;
-    k.style.display="flex";
-    document.getElementById("footid").style.display="block";
-    document.getElementById("incar").style.display="block";
-    document.getElementById("cargid").style.display="none";
-    document.getElementById("ctxt").style.display="none";
-    pdt[b]=parent.querySelector('p').textContent;
-    cost[b]=parent.querySelector('p1').textContent.replace('$','');
-    document.getElementById(b).parentElement.firstElementChild.style.border="1px solid hsl(14, 86%, 42%)";
-    cart.style.height="21em";
-    out[b]+=1;
-    total+=out[b];
-    price[b]=out[b]*cost[b];
-    var temp=Number(b)+10;
-    var ctem=Number(b)+30;
-    k.querySelector('span').innerText=out[b];
-    cart.querySelector('span').innerText=total;
-    var newdiv=document.createElement("div");
-    newdiv.setAttribute("class","in1");
-    newdiv.setAttribute("id",temp);
-    incart.appendChild(newdiv);
-    var ctdiv=document.createElement("div");
-    ctdiv.setAttribute("class","ct1");
-    ctdiv.className +=" in1";
-    ctdiv.setAttribute("id",ctem);
-    document.getElementById("confid").appendChild(ctdiv);
-    butct[b]=Number(b)+20;
-    cartdisplay(b,temp,butct[b],ctem);
-    final();
-}
-function increment(p){
-    var s= document.getElementById(p)
-    if(out[p]!=15){
-        out[p]+=1;
-        total+=1;
-    }
-    var temp=Number(p)+10;
-    var ctem=Number(p)+30;
-    butct[p]=Number(p)+20;
-    s.querySelector('span').innerText=out[p];
-    cart.querySelector('span').innerText=total;
-    price[p]=out[p]*cost[p];    
-    cartdisplay(p,temp,butct[p],ctem);
-    final();
-}
-function decrement(p){
-    var s= document.getElementById(p)
-    if((out[p]!=0)&&(total!=0)){
-        out[p]-=1;
-        total-=1;
-    }
-    if(out[p]==0){
-        document.getElementById(p).style.display="none";
-        document.getElementById(p).parentElement.firstElementChild.style.border="none";
-    }
-    var temp=Number(p)+10;
-    var ctem=Number(p)+30;
-    butct[p]=Number(p)+20;
-    s.querySelector('span').innerText=out[p];
-    cart.querySelector('span').innerText=total;
-    price[p]=out[p]*cost[p];   
-    cartdisplay(p,temp,butct[p],ctem);
-    final();
-}
-function cartdisplay(p,tem,but,ctem){
-    document.getElementById(tem).innerHTML=`
-    <p>${pdt[p]}</p> 
-    <button id="${but}" ><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#CAAFA7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"/></svg></button>
-    <p2><p1><span id="sp1">${out[p]}</span>x</p1> <p4>@$<span id="sp2">${cost[p]}</span></p4><p5> $<span id="sp3">${price[p]}</span></p5></p2>`
-    document.getElementById(but).onclick=function(){close(but)} ;  
-    try{
-    if(out[p]==0){
-        close(but);
-        document.getElementById(ctem).remove();
-    }
-    document.getElementById(ctem).innerHTML=`
-    <p>${pdt[p]}</p> <p5> $<span id="sp3">${price[p]}</span></p5>
-    <p2><p1><span id="sp1">${out[p]}</span>x</p1> <p4>@$<span id="sp2">${cost[p]}</span></p4></p2>
-    <img class="image" src="${imadd[p]}" alt="" >           `  
-    }catch(error){
+(() => {
+  const doc = document.documentElement;
+  const header = document.querySelector(".site-header");
+  const nav = document.getElementById("primary-nav");
+  const menuToggle = document.getElementById("menu-toggle");
+  const langToggle = document.getElementById("lang-toggle");
+  const progress = document.getElementById("scroll-progress");
+  const toTop = document.getElementById("to-top");
+  const navLinks = nav ? [...nav.querySelectorAll("a[href^='#']")] : [];
+  const sections = navLinks
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
 
-    }  
-}
-function close(cl){
-    var pr=cl-20;
-    var t=cl-10;
-    var j=Number(cl)+10;
-    total-=out[pr]
-    cart.querySelector('span').innerText=total;
-    document.getElementById(t).remove();
-    document.getElementById(j).remove();
-    out[pr]=0;
-    price[pr]=0;
-    document.getElementById(pr).style.display="none";
-    final();
-    if(total==0){
-        document.getElementById("footid").style.display="none";
-        document.getElementById("incar").style.display="none";
-        document.getElementById("cargid").style.display="block";
-        document.getElementById("ctxt").style.display="block";
-        cart.style.height="20em";
-    }   
-}
-function final(){
-    var fincost=0;
-    for(i=1;i<=9;i++){
-        fincost+=price[i];
-    }
-    document.getElementById('footid').querySelector('span').innerText=fincost;
-    document.getElementById('tot').querySelector('span').innerText=fincost;
-}  
- function conforder(){
-    document.getElementById('finconf').style.display="block";
-    document.getElementById('contid').style.display="block";
- }   
+  const titles = {
+    ar: "الموسى للتقنية وخدمات الأنظمة الأمنية | Al-Mousa Technology",
+    en: "Al-Mousa for Technology and Security Systems | Corporate Profile",
+  };
 
- function cartside(x){
-    var y=document.getElementById(x);
-    if(y.style.display =='none'){
-        y.style.display="flex";
-    }else{
-        y.style.display='none';
-    }
- }
- window.onresize=function(){
-    if(window.innerWidth >= 775){
-        document.getElementById("cartid").style.display="flex";
-        document.getElementById("cartid").style.height="66%";
-}else{
-    document.getElementById("cartid").style.display="none";
-}
- }
+  const descriptions = {
+    ar: "شركة الموسى للتقنية وخدمات الأنظمة الأمنية — حلول أمنية وتقنية متكاملة في الرياض، المملكة العربية السعودية.",
+    en: "Al-Mousa for Technology and Security Systems Services Co. — integrated security and technology solutions in Riyadh, Kingdom of Saudi Arabia.",
+  };
+
+  function setLanguage(lang) {
+    const next = lang === "en" ? "en" : "ar";
+    doc.lang = next;
+    doc.dir = next === "ar" ? "rtl" : "ltr";
+    document.title = titles[next];
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", descriptions[next]);
+    localStorage.setItem("al-mousa-lang", next);
+    const url = new URL(window.location.href);
+    if (next === "en") url.searchParams.set("lang", "en");
+    else url.searchParams.delete("lang");
+    history.replaceState({}, "", url);
+  }
+
+  function initLanguage() {
+    const params = new URLSearchParams(window.location.search);
+    const fromQuery = params.get("lang");
+    const stored = localStorage.getItem("al-mousa-lang");
+    const preferred =
+      fromQuery === "en" || fromQuery === "ar"
+        ? fromQuery
+        : stored === "en" || stored === "ar"
+          ? stored
+          : "ar";
+    setLanguage(preferred);
+  }
+
+  langToggle?.addEventListener("click", () => {
+    setLanguage(doc.lang === "ar" ? "en" : "ar");
+  });
+
+  menuToggle?.addEventListener("click", () => {
+    const open = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!open));
+    nav?.classList.toggle("is-open", !open);
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle?.setAttribute("aria-expanded", "false");
+      nav?.classList.remove("is-open");
+    });
+  });
+
+  function onScroll() {
+    const scrollTop = window.scrollY || doc.scrollTop;
+    const height = doc.scrollHeight - doc.clientHeight;
+    const ratio = height > 0 ? (scrollTop / height) * 100 : 0;
+    if (progress) progress.style.width = `${ratio}%`;
+    header?.classList.toggle("is-scrolled", scrollTop > 12);
+    toTop?.classList.toggle("is-visible", scrollTop > 520);
+
+    let currentId = "";
+    sections.forEach((section) => {
+      const top = section.offsetTop - 120;
+      if (scrollTop >= top) currentId = `#${section.id}`;
+    });
+    navLinks.forEach((link) => {
+      link.classList.toggle("is-active", link.getAttribute("href") === currentId);
+    });
+  }
+
+  toTop?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* Reveal on scroll */
+  const revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-in");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+    );
+    revealEls.forEach((el) => revealObserver.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-in"));
+  }
+
+  /* Lazy-load decorative project visuals (content-visibility + deferred paint) */
+  const lazyVisuals = document.querySelectorAll(".project__visual");
+  if ("IntersectionObserver" in window) {
+    const lazyObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-loaded");
+          observer.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "120px 0px" }
+    );
+    lazyVisuals.forEach((el) => lazyObserver.observe(el));
+  }
+
+  /* Native lazy images fallback enhancement */
+  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+    if (img.complete) return;
+    img.addEventListener("load", () => img.classList.add("is-loaded"), { once: true });
+  });
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  initLanguage();
+  onScroll();
+
+  /* Hero entrance */
+  requestAnimationFrame(() => {
+    document.querySelector(".hero__content")?.classList.add("is-in");
+  });
+})();

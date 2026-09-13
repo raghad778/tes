@@ -1,170 +1,644 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A1F1A">
+  <meta name="description" content="شركة الموسى للتقنية وخدمات الأنظمة الأمنية — حلول أمنية وتقنية متكاملة في الرياض، المملكة العربية السعودية. ذراع تقني متخصص لمجموعة الموسى المحدودة، داعمة لرؤية 2030.">
+  <meta name="keywords" content="الموسى للتقنية, أنظمة أمنية, أمن المعلومات, شبكات, مراكز بيانات, الرياض, رؤية 2030, Al-Mousa Technology, security systems Saudi Arabia">
+  <meta name="author" content="Al-Mousa for Technology and Security Systems Services Co.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://al-mousa.sa/">
+  <link rel="alternate" hreflang="ar" href="https://al-mousa.sa/">
+  <link rel="alternate" hreflang="en" href="https://al-mousa.sa/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://al-mousa.sa/">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="style.css" rel="stylesheet" >
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="الموسى للتقنية وخدمات الأنظمة الأمنية | Al-Mousa Technology">
+  <meta property="og:description" content="حلول أمنية وتقنية متكاملة لحماية المنشآت الحيوية وتأمين المشاريع الوطنية الكبرى في المملكة العربية السعودية.">
+  <meta property="og:site_name" content="Al-Mousa for Technology">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Al-Mousa for Technology and Security Systems">
+  <meta name="twitter:description" content="Integrated security and technology solutions across the Kingdom of Saudi Arabia.">
+
+  <title>الموسى للتقنية وخدمات الأنظمة الأمنية | Al-Mousa Technology</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/brand/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Al-Mousa for Technology and Security Systems Services Co.",
+    "alternateName": "شركة الموسى للتقنية وخدمات الأنظمة الأمنية",
+    "url": "https://al-mousa.sa/",
+    "logo": "./assets/brand/logo.svg",
+    "foundingDate": "2021",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Riyadh",
+      "addressCountry": "SA"
+    },
+    "description": "Specialized technical arm of Al-Mousa Group Co. Ltd. providing integrated security solutions and advanced infrastructure across Saudi Arabia.",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Al-Mousa Group Co. Ltd."
+    },
+    "areaServed": "Saudi Arabia"
+  }
+  </script>
 </head>
 <body>
-  <div class="cont" id="contid"></div>
-  <div class="container">
-        <h2 class="heading">Desserts</h2>         
-      <br>
-      
-        <div class="box item1" >          
-          <img class="image" id="im" src="assets/images/image-waffle-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('1')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="1" ><button id="inc" onclick="increment('1')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('1')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Waffle</h5>
-          <p>Waffle with Berries</p>
-          <p1>$<span>6.50</span></p1>         
-        </div>
-        <div class="box item2" >
-      <img class="image" id="im" src="assets/images/image-creme-brulee-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('2')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="2" ><button id="inc" onclick="increment('2')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('2')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Crème Brûlée</h5>
-          <p>Vanilla Bean Crème Brûlée</p>
-          <p1>$<span>7.00</span></p1>
-        </div>
-        <div class="box item3">
-          <img class="image" id="im" src="assets/images/image-macaron-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('3')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="3" ><button id="inc" onclick="increment('3')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('3')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Macaron</h5>
-          <p>Macaron Mix of Five</p>
-          <p1>$<span>8.00</span></p1>
-        </div>
-        <div class="box item4">
-          <img class="image" id="im" src="assets/images/image-tiramisu-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('4')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="4" ><button id="inc" onclick="increment('4')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('4')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Tiramisu</h5>
-          <p>Classic Tiramisu</p>
-          <p1>$<span> 5.50</span></p1>
-        </div>
-        <div class="box item5">
-          <img class="image" id="im" src="assets/images/image-baklava-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('5')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="5" ><button id="inc" onclick="increment('5')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('5')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Baklava</h5>
-          <p>Pistachio Baklava</p>
-          <p1>$<span>4.00</span></p1>
-        </div>
-        <div class="box item6">
-          <img class="image" id="im" src="assets/images/image-meringue-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('6')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="6" ><button id="inc" onclick="increment('6')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('6')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Pie</h5>
-          <p>Lemon Meringue Pie</p>
-          <p1>$<span>5.00</span></p1>
-        </div>
-        <div class="box item7">
-          <img class="image" id="im" src="assets/images/image-cake-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('7')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="7" ><button id="inc" onclick="increment('7')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('7')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Cake</h5>
-          <p> Red Velvet Cake</p>
-          <p1>$<span>4.50</span></p1>
-        </div>
-        <div class="box item8">
-          <img class="image" id="im" src="assets/images/image-brownie-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('8')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="8" ><button id="inc" onclick="increment('8')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('8')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Brownie</h5>
-          <p>Salted Caramel Brownie</p>
-          <p1>$<span>4.50</span></p1>
-        
-        </div>
-        <div class="box item9">
-          <img class="image" id="im" src="assets/images/image-panna-cotta-desktop.jpg" alt="" >
-          <div class="add" onclick="displaybut('9')"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
-            <h5>Add to Cart</h5></div>
-            <div class="but" id="9" ><button id="inc" onclick="increment('9')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
-            </button><span>1</span><button id="dec" onclick="decrement('9')"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
-            </button></div>
-          <h5>Panna Cotta</h5>
-          <p>Vanilla Panna Cotta</p>
-          <p1>$<span> 6.50</span></p1>
-        </div>
-      
+  <a class="skip-link" href="#main">
+    <span class="lang-ar">تخطي إلى المحتوى</span>
+    <span class="lang-en">Skip to content</span>
+  </a>
 
-  <div class="confirm" id="finconf">    
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 32.121L13.5 24.6195L15.6195 22.5L21 27.879L32.3775 16.5L34.5 18.6225L21 32.121Z" fill="#1EA575"/>
-        <path d="M24 3C19.8466 3 15.7865 4.23163 12.333 6.53914C8.8796 8.84665 6.18798 12.1264 4.59854 15.9636C3.0091 19.8009 2.59323 24.0233 3.40352 28.0969C4.21381 32.1705 6.21386 35.9123 9.15077 38.8492C12.0877 41.7861 15.8295 43.7862 19.9031 44.5965C23.9767 45.4068 28.1991 44.9909 32.0364 43.4015C35.8736 41.812 39.1534 39.1204 41.4609 35.667C43.7684 32.2135 45 28.1534 45 24C45 18.4305 42.7875 13.089 38.8493 9.15076C34.911 5.21249 29.5696 3 24 3ZM24 42C20.4399 42 16.9598 40.9443 13.9997 38.9665C11.0397 36.9886 8.73256 34.1774 7.37018 30.8883C6.0078 27.5992 5.65134 23.98 6.34587 20.4884C7.04041 16.9967 8.75474 13.7894 11.2721 11.2721C13.7894 8.75473 16.9967 7.0404 20.4884 6.34587C23.98 5.65133 27.5992 6.00779 30.8883 7.37017C34.1774 8.73255 36.9886 11.0397 38.9665 13.9997C40.9443 16.9598 42 20.4399 42 24C42 28.7739 40.1036 33.3523 36.7279 36.7279C33.3523 40.1036 28.7739 42 24 42Z" fill="#1EA575"/>
-        </svg>
-        
-      <h1>Order Confirmed</h1>
-      <p3>We hope you enjoy your food!</p3>
-      <div class="totconf">
-      <div class="confcart" id="confid">  
-        
-       
-      </div>
-      <h4>Order Total</h4><p4 id="tot">$<span>0</span></p4>
-    </div>
-    <a href="index.html"><button id="storder"><p6>Start New Order</p6></button></a>
-  </div>
-  
-    <div class="cart" id="cartid">
-      <h2 style="color:hsl(14, 86%, 42%)">Your Cart (<span>0</span>)</h2>  
-      <div class="incart" id="incar">   
-      </div>    
-      <svg class="carg" id="cargid" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="none" viewBox="0 0 128 128"><path fill="#260F08" d="M8.436 110.406c0 1.061 4.636 2.079 12.887 2.829 8.252.75 19.444 1.171 31.113 1.171 11.67 0 22.861-.421 31.113-1.171 8.251-.75 12.887-1.768 12.887-2.829 0-1.061-4.636-2.078-12.887-2.828-8.252-.75-19.443-1.172-31.113-1.172-11.67 0-22.861.422-31.113 1.172-8.251.75-12.887 1.767-12.887 2.828Z" opacity=".15"/><path fill="#87635A" d="m119.983 24.22-47.147 5.76 4.32 35.36 44.773-5.467a2.377 2.377 0 0 0 2.017-1.734c.083-.304.104-.62.063-.933l-4.026-32.986Z"/><path fill="#AD8A85" d="m74.561 44.142 47.147-5.754 1.435 11.778-47.142 5.758-1.44-11.782Z"/><path fill="#CAAFA7" d="M85.636 36.78a2.4 2.4 0 0 0-2.667-2.054 2.375 2.375 0 0 0-2.053 2.667l.293 2.347a3.574 3.574 0 0 1-7.066.88l-1.307-10.667 14.48-16.88c19.253-.693 34.133 3.6 35.013 10.8l1.28 10.533a1.172 1.172 0 0 1-1.333 1.307 4.696 4.696 0 0 1-3.787-4.08 2.378 2.378 0 1 0-4.72.587l.294 2.346a2.389 2.389 0 0 1-.484 1.755 2.387 2.387 0 0 1-1.583.899 2.383 2.383 0 0 1-1.755-.484 2.378 2.378 0 0 1-.898-1.583 2.371 2.371 0 0 0-1.716-2.008 2.374 2.374 0 0 0-2.511.817 2.374 2.374 0 0 0-.493 1.751l.293 2.373a4.753 4.753 0 0 1-7.652 4.317 4.755 4.755 0 0 1-1.788-3.17l-.427-3.547a2.346 2.346 0 0 0-2.666-2.053 2.4 2.4 0 0 0-2.08 2.667l.16 1.173a2.378 2.378 0 1 1-4.72.587l-.107-1.28Z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".974" d="m81.076 28.966 34.187-4.16"/><path fill="#87635A" d="M7.45 51.793c-.96 8.48 16.746 17.44 39.466 19.947 22.72 2.506 42.08-2.16 43.04-10.667l-3.947 35.493c-.96 8.48-20.24 13.334-43.04 10.667S2.463 95.74 3.423 87.18l4.026-35.387Z"/><path fill="#AD8A85" d="M5.823 65.953c-.96 8.453 16.746 17.44 39.573 20.027 22.827 2.586 42.053-2.187 43.013-10.667L87.076 87.1c-.96 8.48-20.24 13.333-43.04 10.666C21.236 95.1 3.53 86.22 4.49 77.74l1.334-11.787Z"/><path fill="#CAAFA7" d="M60.836 42.78a119.963 119.963 0 0 0-10.347-1.627c-24-2.667-44.453 1.893-45.333 10.373l-2.133 18.88a3.556 3.556 0 1 0 7.066.8 3.574 3.574 0 1 1 7.094.8l-.8 7.094a5.93 5.93 0 1 0 11.786 1.333 3.556 3.556 0 0 1 7.067.8l-.267 2.347a3.573 3.573 0 0 0 7.094.826l.133-1.2a5.932 5.932 0 1 1 11.787 1.36l-.4 3.52a3.573 3.573 0 0 0 7.093.827l.933-8.267a1.174 1.174 0 0 1 1.307-.906 1.146 1.146 0 0 1 1.04 1.306 5.947 5.947 0 0 0 11.813 1.334l.534-4.72a3.556 3.556 0 0 1 7.066.8 3.573 3.573 0 0 0 7.094.826l1.786-15.546a2.373 2.373 0 0 0-2.08-2.667L44.143 55.74l16.693-12.96Z"/><path fill="#87635A" d="m59.156 57.66 1.68-14.88-16.827 13.173 15.147 1.707Z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".974" d="M9.796 52.06c-.667 5.866 16.24 12.586 37.733 15.04 14.774 1.68 27.867.906 34.854-1.654"/></svg>
-      <h5 id="ctxt">Your added items will appear here</h5>
-      <div class="foot" id="footid">
-        <p2 class="ord">Order Total</p2><p4>$<span>0</span></p4>
-        <div class="carb"><p2><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><path fill="#1EA575" d="M8 18.75H6.125V17.5H8V9.729L5.803 8.41l.644-1.072 2.196 1.318a1.256 1.256 0 0 1 .607 1.072V17.5A1.25 1.25 0 0 1 8 18.75Z"/><path fill="#1EA575" d="M14.25 18.75h-1.875a1.25 1.25 0 0 1-1.25-1.25v-6.875h3.75a2.498 2.498 0 0 0 2.488-2.747 2.594 2.594 0 0 0-2.622-2.253h-.99l-.11-.487C13.283 3.56 11.769 2.5 9.875 2.5a3.762 3.762 0 0 0-3.4 2.179l-.194.417-.54-.072A1.876 1.876 0 0 0 5.5 5a2.5 2.5 0 1 0 0 5v1.25a3.75 3.75 0 0 1 0-7.5h.05a5.019 5.019 0 0 1 4.325-2.5c2.3 0 4.182 1.236 4.845 3.125h.02a3.852 3.852 0 0 1 3.868 3.384 3.75 3.75 0 0 1-3.733 4.116h-2.5V17.5h1.875v1.25Z"/></svg>
-          This is a <p3 style="font-weight: bold;">carbon-neutral</p3> delivery</p2></div>
-          <button class="footbtn" onclick="conforder()">Confirm Order</button>
+  <div class="progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Al-Mousa">
+        <img src="./assets/brand/logo.svg" width="44" height="44" alt="" class="brand__mark">
+        <span class="brand__text">
+          <strong class="lang-ar">الموسى للتقنية</strong>
+          <strong class="lang-en">AL-MOUSA</strong>
+          <small class="lang-ar">الأنظمة الأمنية والخدمات</small>
+          <small class="lang-en">Technology &amp; Security</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="#about"><span class="lang-ar">من نحن</span><span class="lang-en">About</span></a>
+        <a href="#vision"><span class="lang-ar">الرؤية</span><span class="lang-en">Vision</span></a>
+        <a href="#services"><span class="lang-ar">الخدمات</span><span class="lang-en">Services</span></a>
+        <a href="#ecosystem"><span class="lang-ar">المنظومة</span><span class="lang-en">Ecosystem</span></a>
+        <a href="#projects"><span class="lang-ar">المشاريع</span><span class="lang-en">Projects</span></a>
+        <a href="#contact"><span class="lang-ar">تواصل</span><span class="lang-en">Contact</span></a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-ar">EN</span>
+          <span class="lang-en">عربي</span>
+        </button>
+        <a class="btn btn--sm btn--solid" href="#contact">
+          <span class="lang-ar">تواصل معنا</span>
+          <span class="lang-en">Contact Us</span>
+        </a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Menu</span>
+        </button>
       </div>
     </div>
-  </div>
-  <div id="carticon" onclick="cartside('cartid')">
-    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#fff" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"></path><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"></path></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"></path></clipPath></defs></svg>
+  </header>
 
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/abhi6174">Abhishek</a>.
-  </div>
-  <script  src="script.js"></script>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-brand">
+      <div class="hero__atmosphere" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--a"></div>
+        <div class="hero__orb hero__orb--b"></div>
+        <div class="hero__scan"></div>
+      </div>
+
+      <div class="hero__content reveal">
+        <p class="hero__meta">
+          <span class="lang-ar">الرياض · المملكة العربية السعودية · الملف المؤسسي ٢٠٢٦</span>
+          <span class="lang-en">Riyadh · Kingdom of Saudi Arabia · Corporate Profile 2026</span>
+        </p>
+        <h1 id="hero-brand" class="hero__brand">
+          <span class="lang-ar">الموسى للتقنية<br>وخدمات الأنظمة الأمنية</span>
+          <span class="lang-en">AL-MOUSA FOR TECHNOLOGY<br>AND SECURITY SYSTEMS SERVICES CO</span>
+        </h1>
+        <p class="hero__tagline">
+          <span class="lang-ar">إحدى شركات مجموعة الموسى المحدودة — دروع حماية رقمية وفيزيائية لاستدامة الأعمال وتأمين الأصول الوطنية.</span>
+          <span class="lang-en">A Subsidiary of Al-Mousa Group Co. Ltd. — forging digital and physical protection shields for business sustainability and national assets.</span>
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#about">
+            <span class="lang-ar">اكتشف قصتنا</span>
+            <span class="lang-en">Discover Our Story</span>
+          </a>
+          <a class="btn btn--ghost" href="#services">
+            <span class="lang-ar">خدماتنا المتكاملة</span>
+            <span class="lang-en">Our Solutions</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT INTRO STRIP -->
+    <section class="intro-strip" aria-label="Company focus">
+      <div class="container reveal">
+        <p class="intro-strip__lead">
+          <span class="lang-ar">تعمل الشركة بشغف وكفاءة عالية لتغطية كافة مناطق المملكة العربية السعودية عبر توفير أحدث الخدمات التقنية التي تحمي المنشآت من شتى المخاطر البشرية والبيئية وفق أعلى معايير الجودة والاشتراطات المعتمدة.</span>
+          <span class="lang-en">We operate with passion and high efficiency to cover all regions of the Kingdom of Saudi Arabia by providing the latest technical services that protect facilities from various human and environmental risks, in accordance with the highest quality standards and certified regulations.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="lang-ar">من نحن</span><span class="lang-en">About Us</span></p>
+          <h2>
+            <span class="lang-ar">ذراع تقني متخصص من قلب الرياض</span>
+            <span class="lang-en">A specialized technical arm from the heart of Riyadh</span>
+          </h2>
+        </div>
+        <div class="prose reveal delay-1">
+          <p class="lang-ar">انطلقت شركة الموسى للتقنية وخدمات الأنظمة الأمنية عام ٢٠٢١ من قلب العاصمة الرياض كذراع تقني متخصص متفرع من مجموعة الموسى المحدودة. وتحت قيادة المؤسس المهندس عبد الكريم الموسى نقود قطاع الحلول الأمنية المتكاملة والبنية التحتية المتطورة في السوق السعودي.</p>
+          <p class="lang-en">Al-Mousa for Technology and Security Systems Services Co. was launched in 2021 from the heart of the capital, Riyadh, as a specialized technical arm of Al-Mousa Group Co. Ltd. Under the leadership of the founder, Eng. Abdulkarim Al-Mousa, we lead the integrated security solutions and advanced infrastructure sector in the Saudi market.</p>
+          <p class="lang-ar">نعتز بمساهمتنا الفعالة في صياغة ملامح رؤية المملكة ٢٠٣٠ من خلال فخرنا بالمشاركة في تنفيذ وتأمين مشاريع وطنية عملاقة ونوعية مثل مشروع أمالا ومشاريع البحر الأحمر.</p>
+          <p class="lang-en">We take immense pride in our active contribution to shaping the features of the Kingdom's Vision 2030 through our proud participation in executing and securing mega and qualitative national projects, such as the AMAALA project and the Red Sea projects.</p>
+        </div>
+      </div>
+
+      <div class="container quote-block reveal">
+        <blockquote>
+          <span class="lang-ar">إن تميزنا لا يقف عند حدود تسليم المشاريع في أوقات قياسية، بل يمتد لبناء علاقات استراتيجية متينة طويلة الأمد ترتكز على الثقة المطلقة.</span>
+          <span class="lang-en">Our excellence does not stop at delivering projects in record time; rather, it extends to building solid, long-term strategic relationships rooted in absolute trust.</span>
+        </blockquote>
+        <p class="quote-block__note">
+          <span class="lang-ar">نوفر خدمات استشارية وصيانة متكاملة تلبي تطلعات شركائنا في القطاعين الحكومي والخاص، بما يشمل الوزارات والهيئات والحدود والمنافذ البرية والبنوك والمستشفيات والجامعات.</span>
+          <span class="lang-en">We provide integrated consultancy and maintenance services that meet the aspirations of our partners in both the government and private sectors, including ministries, authorities, borders, land ports, banks, hospitals, and universities.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section class="section section--alt" id="vision">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="lang-ar">رؤيتنا ورسالتنا</span><span class="lang-en">Our Vision &amp; Mission</span></p>
+          <h2>
+            <span class="lang-ar">ريادة وطنية نصنعها بأيدي كوادرنا السعودية</span>
+            <span class="lang-en">National leadership forged by Saudi talents</span>
+          </h2>
+        </div>
+
+        <div class="duo">
+          <article class="panel reveal">
+            <h3><span class="lang-ar">رؤيتنا المستقبلية</span><span class="lang-en">Our Vision</span></h3>
+            <p class="lang-ar">الريادة ليست مجرد طموح بل التزام وطني نصنعه بأيدي كوادرنا السعودية لنكون الواجهة الأولى والشركاء الأوثق في صياغة المشهد الأمني والتقني بالمملكة.</p>
+            <p class="lang-en">Leadership is not merely an ambition; it is a national commitment forged by the hands of our Saudi talents, positioning us as the premier destination and the most trusted partner in shaping the security and technological landscape of the Kingdom.</p>
+          </article>
+          <article class="panel reveal delay-1">
+            <h3><span class="lang-ar">رسالتنا المؤسسية</span><span class="lang-en">Our Corporate Mission</span></h3>
+            <p class="lang-ar">نسعى بثبات نحو قيادة وتوسيع نطاق مشاريع الأنظمة الأمنية الذكية في المملكة مع التركيز المطلق على استقطاب وتمكين قدر أكبر من الكوادر والمهارات الوطنية الشابة للمساهمة في تحقيق مستهدفات رؤية المملكة ٢٠٣٠ وضمان تقديم حلول ابتكارية مستدامة تحافظ على صدارة ورضا عملائنا.</p>
+            <p class="lang-en">We steadfastly strive to lead and expand the scope of smart security systems projects in the Kingdom, with an absolute focus on attracting and empowering the maximum potential of young national talents and skills to contribute to Saudi Vision 2030 and deliver sustainable, innovative solutions.</p>
+          </article>
+        </div>
+
+        <div class="belief reveal">
+          <p class="lang-ar">نؤمن بأن حماية مواردك ومنشأتك هي الخطوة الأولى نحو صناعة النجاح، وأن التزامنا بالجودة والسرعة هو المعادلة الذكية لخفض النفقات وزيادة الإنتاجية التشغيلية. تلتزم شركة الموسى بتقديم منظومة حلول أمنية وتقنية حديثة ومتكاملة تحمي الأصول والمنشآت بكفاءة فائقة.</p>
+          <p class="lang-en">We believe that protecting your resources and facilities is the foundational step toward crafting success, and that our commitment to quality and speed is the smart equation for reducing expenses and increasing operational productivity. Al-Mousa is committed to providing a modern, integrated ecosystem of security and technological solutions that protect assets and facilities with superb efficiency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOALS & VALUES -->
+    <section class="section" id="goals">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="lang-ar">أهدافنا وقيمنا</span><span class="lang-en">Our Goals &amp; Values</span></p>
+          <h2>
+            <span class="lang-ar">بوصلة أعمال تُحرّك الأثر وتُرسّخ الشراكة</span>
+            <span class="lang-en">A business compass that expands impact</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-ar">نحرك بوصلة أعمالنا بذكاء لتوسيع أثرنا في المشاريع النوعية وترسيخ مكانتنا كشريك أمني عالمي يُدار بأيدي وطنية ماهرة.</span>
+            <span class="lang-en">We intelligently steer our business compass to expand our impact on qualitative projects and solidify our position as a global security partner managed by skilled national hands.</span>
+          </p>
+        </div>
+
+        <div class="goal-grid">
+          <article class="goal reveal">
+            <span class="goal__num">01</span>
+            <h3><span class="lang-ar">التوسع الطموح</span><span class="lang-en">Ambitious Expansion</span></h3>
+            <p class="lang-ar">التوسع الطموح في تنفيذ المشاريع الكبرى الداعمة لرؤية المملكة ٢٠٣٠.</p>
+            <p class="lang-en">Accelerating the execution of mega-projects that support Saudi Vision 2030.</p>
+          </article>
+          <article class="goal reveal delay-1">
+            <span class="goal__num">02</span>
+            <h3><span class="lang-ar">تحالفات استراتيجية</span><span class="lang-en">Strategic Alliances</span></h3>
+            <p class="lang-ar">عقد وتعزيز شراكات استراتيجية مثمرة مع أبرز صناع العلامات التجارية والتقنيات الأمنية العالمية.</p>
+            <p class="lang-en">Establishing and strengthening fruitful strategic partnerships with leading global brands and security technology manufacturers.</p>
+          </article>
+          <article class="goal reveal delay-2">
+            <span class="goal__num">03</span>
+            <h3><span class="lang-ar">تنمية المواهب</span><span class="lang-en">Talent Cultivation</span></h3>
+            <p class="lang-ar">استقطاب وتطوير الكوادر الوطنية الماهرة لرفع كفاءة الأداء وتحقيق الاستدامة المهنية.</p>
+            <p class="lang-en">Attracting and developing skilled national cadres to elevate performance efficiency and achieve professional sustainability.</p>
+          </article>
+          <article class="goal reveal delay-3">
+            <span class="goal__num">04</span>
+            <h3><span class="lang-ar">معيار موثوق</span><span class="lang-en">A Trusted Benchmark</span></h3>
+            <p class="lang-ar">ترسيخ مكانة الشركة كعلامة فارقة وشريك موثوق للأنظمة الأمنية عالية الجودة.</p>
+            <p class="lang-en">Anchoring the company's position as a hallmark and a trusted partner for high-quality security systems.</p>
+          </article>
+        </div>
+
+        <div class="values-wrap reveal">
+          <div class="values-intro">
+            <h3><span class="lang-ar">قيمنا الراسخة</span><span class="lang-en">Our Core Values</span></h3>
+            <p class="lang-ar">القيم بالنسبة لنا ليست شعارات مكتوبة بل هي محرك الأداء اليومي الذي يضمن لعملائنا تجربة تعامل تتسم بالنزاهة والإتقان المطلق.</p>
+            <p class="lang-en">Values to us are not merely written slogans; rather, they are the driving engine of our daily performance, guaranteeing our clients an experience defined by integrity and absolute mastery.</p>
+          </div>
+          <div class="values-grid">
+            <article class="value">
+              <h4><span class="lang-ar">الإخلاص في العمل</span><span class="lang-en">Dedication &amp; Commitment</span></h4>
+              <p class="lang-ar">نؤدي مهامنا بأعلى درجات المسؤولية والالتزام التام بما يفوق تطلعات شركائنا ويعكس هويتنا المهنية الرصينة.</p>
+              <p class="lang-en">We execute our tasks with the highest level of responsibility and total commitment, exceeding our partners' expectations and reflecting our solid professional identity.</p>
+            </article>
+            <article class="value">
+              <h4><span class="lang-ar">الصدق والشفافية</span><span class="lang-en">Honesty &amp; Transparency</span></h4>
+              <p class="lang-ar">الوضوح المطلق والمصداقية التامة هما أساس تعاملاتنا لبناء علاقات وطيدة ومستدامة ترتكز على الاحترام المتبادل.</p>
+              <p class="lang-en">Absolute clarity and total credibility are the bedrock of our transactions, enabling us to build close, sustainable relationships anchored in mutual respect.</p>
+            </article>
+            <article class="value">
+              <h4><span class="lang-ar">التعاون والتكامل</span><span class="lang-en">Collaboration &amp; Integration</span></h4>
+              <p class="lang-ar">نعمل بروح الفريق الواحد المترابط لتعزيز بيئة عمل متناغمة تحقق أفضل النتائج والمخرجات في كافة مشاريعنا.</p>
+              <p class="lang-en">We operate with a unified, interconnected team spirit to foster a harmonious work environment that achieves the best results across all our projects.</p>
+            </article>
+            <article class="value">
+              <h4><span class="lang-ar">الإتقان والتميز</span><span class="lang-en">Mastery &amp; Excellence</span></h4>
+              <p class="lang-ar">نحرص على التنفيذ الدقيق والمطابق لأفضل الممارسات والمعايير المعتمدة محلياً وعالمياً دون هدر في الموارد أو الوقت.</p>
+              <p class="lang-en">We ensure precise execution that complies with the best locally and globally approved practices and standards, without wasting time or resources.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section class="section section--dark" id="methodology">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="lang-ar">منهجية العمل والهيكل التنظيمي</span><span class="lang-en">Work Methodology &amp; Organizational Structure</span></p>
+          <h2>
+            <span class="lang-ar">تخطيط دقيق وإشراف مكثف</span>
+            <span class="lang-en">Meticulous planning &amp; intensive supervision</span>
+          </h2>
+        </div>
+
+        <div class="method-layout">
+          <div class="method-steps">
+            <article class="step reveal">
+              <span class="step__n">01</span>
+              <div>
+                <h3><span class="lang-ar">التخطيط المسبق</span><span class="lang-en">Pre-planning</span></h3>
+                <p class="lang-ar">تبدأ منهجيتنا الاحترافية بالتخطيط المسبق والدقيق لكل مشروع لتحليل المخاطر وتحديد الأهداف بوضوح، يعقبه فوراً حشد وتوفير الكوادر الفنية المؤهلة بالأعداد المناسبة لضمان سير الأعمال بكفاءة تامة.</p>
+                <p class="lang-en">Our professional methodology begins with precise pre-planning for each project to analyze risks and clearly define goals, immediately followed by mobilizing qualified technical cadres to ensure completely efficient workflows.</p>
+              </div>
+            </article>
+            <article class="step reveal delay-1">
+              <span class="step__n">02</span>
+              <div>
+                <h3><span class="lang-ar">التنفيذ الميداني</span><span class="lang-en">Field execution</span></h3>
+                <p class="lang-ar">تنطلق الأعمال في التنفيذ الميداني بسرعة فائقة مدعومة بآليات إشراف ومتابعة مكثفة تضمن دقة الأداء وتكامل الأنظمة، مع قنوات تواصل فعالة ومستمرة بين أفراد الفريق لضمان المرونة والسلاسة.</p>
+                <p class="lang-en">We launch field execution with superb speed, backed by intensive supervision and follow-up mechanisms that guarantee performance accuracy, systems integration, flexibility, and smoothness.</p>
+              </div>
+            </article>
+            <article class="step reveal delay-2">
+              <span class="step__n">03</span>
+              <div>
+                <h3><span class="lang-ar">شراكة ما بعد التسليم</span><span class="lang-en">After-sales partnership</span></h3>
+                <p class="lang-ar">نلتزم بتوفير اتصال سهل ودائم مع عملائنا لتقديم الاستشارات الفنية والخدمات الهندسية الفورية وأعمال الصيانة بعد البيع.</p>
+                <p class="lang-en">We are committed to providing easy, permanent communication with our clients for immediate technical consultations, engineering services, and after-sales maintenance.</p>
+              </div>
+            </article>
+          </div>
+          <aside class="method-aside reveal delay-1">
+            <p class="lang-ar">سر تميزنا هما التخطيط الدقيق والإشراف المكثف في تحويل التحديات التقنية إلى واقع تشغيلي آمن وسلس وبزمن قياسي.</p>
+            <p class="lang-en">Meticulous planning and intensive supervision are the secrets behind our excellence in transforming technical challenges into a secure, seamless operational reality in record time.</p>
+            <hr>
+            <p class="lang-ar">يقود هذا البناء المؤسسي هيكل تنظيمي مرن ومباشر يدمج الكفاءة الإدارية بالخبرة التقنية تحت إدارة مباشرة من المالك المهندس عبد الكريم الموسى، والمدير التنفيذي، والمدير التقني.</p>
+            <p class="lang-en">This institutional framework is led by a flexible and direct organizational structure integrating administrative efficiency with technical expertise under the Owner, Eng. Abdulkarim Al-Mousa, alongside the CEO and CTO.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="lang-ar">خدماتنا وحلولنا المتكاملة</span><span class="lang-en">Our Integrated Services &amp; Solutions</span></p>
+          <h2>
+            <span class="lang-ar">من الدراسة إلى التشغيل عبر نافذة واحدة</span>
+            <span class="lang-en">From study to operation through a single window</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-ar">نوفر لك منظومة متكاملة من الخدمات الهندسية والتقنية من الدراسة والاستشارة وحتى التوريد والتشغيل تضمن لك راحة البال.</span>
+            <span class="lang-en">From study and consultation to supply and operation, we provide an integrated ecosystem of engineering and technical services guaranteeing total peace of mind.</span>
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service reveal">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M10 34V14h8l6 12 6-12h8v20h-6V22l-6.5 13h-3L16 22v12h-6z" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="38" r="2" fill="currentColor"/></svg>
+            </div>
+            <h3><span class="lang-ar">الاستشارات والدراسات الهندسية</span><span class="lang-en">Consultations &amp; Engineering Studies</span></h3>
+            <p class="lang-ar">خدمات استشارية متكاملة لتقييم الاحتياجات بدقة تشمل المسح الميداني للمواقع، تحليل المتطلبات، تصميم الأنظمة والحلول المخصصة، إعداد المخططات الفنية والتنفيذية المعتمدة وحصر الكميات (BOQ) بملفات دقيقة لتفادي الأخطاء وتقليل التكاليف.</p>
+            <p class="lang-en">Integrated consulting to accurately assess needs: field surveys, requirements analysis, customized system design, technical and approved executive blueprints, and precise Bills of Quantities (BOQ) to prevent errors and reduce costs.</p>
+          </article>
+          <article class="service reveal delay-1">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 28h16M16 22h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3><span class="lang-ar">التنفيذ والتركيب الاحترافي</span><span class="lang-en">Professional Execution &amp; Installation</span></h3>
+            <p class="lang-ar">إدارة وتنفيذ المشاريع وبنائها ميدانياً عبر أعمال التمديد والتركيب المتقنة وتأسيس البنية التحتية المتكاملة للأنظمة لضمان تشغيلها بأعلى كفاءة ممكنة.</p>
+            <p class="lang-en">Field management and execution of projects through masterful wiring and installation works, and establishing integrated infrastructure for systems to operate at the highest possible efficiency.</p>
+          </article>
+          <article class="service reveal delay-2">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 10v8M24 30v8M10 24h8M30 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3><span class="lang-ar">الصيانة وخدمات ما بعد البيع</span><span class="lang-en">Maintenance &amp; After-Sales Services</span></h3>
+            <p class="lang-ar">ضمان استدامة الأنظمة عبر برامج الصيانة الدورية المخططة وتقديم الدعم الفني المستمر مع إدارة الأعطال الطارئة وتوفير التحديثات البرمجية اللازمة للأنظمة.</p>
+            <p class="lang-en">Ensuring systems' sustainability through planned periodic maintenance, continuous technical support, emergency breakdown management, and necessary software updates.</p>
+          </article>
+          <article class="service reveal delay-3">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="18" cy="18" r="6" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="18" r="6" stroke="currentColor" stroke-width="2"/><path d="M8 36c2-6 6-9 10-9s8 3 10 9M28 36c1-4 3.5-7 6-7s5 2 6 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3><span class="lang-ar">توفير الكوادر الفنية المتخصصة</span><span class="lang-en">Provision of Specialized Technical Cadres</span></h3>
+            <p class="lang-ar">تزويد المشاريع بمهندسين وفنيين وفرق تنفيذية مدربة بكفاءة عالية لتقديم الدعم الفني الميداني المخصص حسب طبيعة ومتطلبات كل مشروع.</p>
+            <p class="lang-en">Supplying projects with specialized engineers, technicians, and highly trained execution teams for on-site technical support tailored to each project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM -->
+    <section class="section section--alt" id="ecosystem">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="lang-ar">منتجاتنا والمنظومات التقنية</span><span class="lang-en">Technical Ecosystem &amp; Products</span></p>
+          <h2>
+            <span class="lang-ar">لا نبيع منتجات مجردة — نوطّن حلولاً ذكية</span>
+            <span class="lang-en">We localize smart solutions, not mere products</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-ar">نوطّن حلولاً ذكية وبنى تحتية فائقة الاعتمادية عبر شراكات موثوقة مع كبرى البيوت التقنية العالمية. تتميز شركة الموسى بكونها الموزع المعتمد لشركة أترونيكا (Atronika) الأوكرانية بالمملكة، وموزع معتمد لشركة أتيس (Atis) العالمية.</span>
+            <span class="lang-en">We localize smart solutions and ultra-reliable infrastructures through trusted partnerships with major global technology houses. Al-Mousa is the authorized distributor for Atronika in KSA and a certified distributor for Atis.</span>
+          </p>
+        </div>
+
+        <div class="eco-grid">
+          <article class="eco reveal">
+            <h3><span class="lang-ar">البنية التحتية والشبكات</span><span class="lang-en">Infrastructure &amp; Networking</span></h3>
+            <p class="lang-ar">أنظمة كابلات الألياف الضوئية المتطورة (داخلي وخارجي)، كابلات الشبكات النحاسية بكافة فئاتها (CAT6, CAT6A, CAT7) مع السويتشات والراوترات ونقاط الوصول اللاسلكية والكنترولرز، وتأمين الشبكات بحواجز الحماية (Firewall)، إضافة إلى أنظمة IP Telephony وIPTV والملحقات الكاملة.</p>
+            <p class="lang-en">Advanced fiber optic systems (indoor/outdoor), copper network cables (CAT6, CAT6A, CAT7) with switches, routers, wireless access points, controllers, firewalls, IP Telephony, IPTV, and full accessories.</p>
+          </article>
+          <article class="eco reveal delay-1">
+            <h3><span class="lang-ar">أنظمة الأمن والحماية</span><span class="lang-en">Security &amp; Protection Systems</span></h3>
+            <p class="lang-ar">منظومات المراقبة المتقدمة بالكاميرات الذكية وأجهزة التسجيل الرقمية والتخزين السحابي والمحلي، شاشات غرف المراقبة المركزية، التحكم في الدخول، الحضور والانصراف بالبصمة والبطاقات الذكية، أنظمة الإنذار المبكر ومكافحة الحريق، وحماية البيانات ومراقبة الأحداث لحظياً (IP &amp; Analog Access Control).</p>
+            <p class="lang-en">Advanced surveillance with smart IP &amp; Analog cameras, digital/cloud/local recording (NVRs/DVRs), control room screens, Access Control, biometric time &amp; attendance, smart cards, early warning and fire fighting systems, and real-time event monitoring.</p>
+          </article>
+          <article class="eco reveal delay-2">
+            <h3><span class="lang-ar">تجهيز مراكز البيانات</span><span class="lang-en">Data Center Preparation</span></h3>
+            <p class="lang-ar">إنشاء وتجهيز غرف البيانات والمعلومات الحرجة بكافة مكوناتها: كبائن الاتصالات الرئيسية والفرعية، الأرضيات المرتفعة المخصصة للأحمال، أنظمة التكييف الدقيق وتحسين التبريد، والأسقف المخصصة لغرف الحماية البيئية لقياس الحرارة والرطوبة والتسريبات، وتكامل حلول الطاقة والشبكات مركزياً.</p>
+            <p class="lang-en">Critical data rooms with communication cabinets, raised floors, precision cooling, specialized environment ceilings for temperature/humidity/leak monitoring, and centralized energy and network integration.</p>
+          </article>
+          <article class="eco reveal">
+            <h3><span class="lang-ar">الأنظمة الكهربائية والطاقة</span><span class="lang-en">Electrical &amp; Power Systems</span></h3>
+            <p class="lang-ar">لوحات التوزيع الكهربائية الذكية، المحولات والمولدات الاحتياطية عالية القدرة مع مفاتيح التحويل التلقائي (ATS)، حلول الطاقة غير المنقطعة (UPS)، حلول كفاءة الطاقة والتحكم الذكي، وتوريد أنظمة الطاقة الشمسية لإنارة المواقع والمناطق البعيدة.</p>
+            <p class="lang-en">Smart distribution boards, transformers, high-capacity backup generators with ATS, UPS solutions, energy efficiency and smart controls, and solar energy systems for remote sites.</p>
+          </article>
+          <article class="eco reveal delay-1">
+            <h3><span class="lang-ar">الأنظمة الذكية والأتمتة</span><span class="lang-en">Smart Systems &amp; Automation</span></h3>
+            <p class="lang-ar">حلول المنازل والمباني الذكية الكاملة للتحكم المركزي في الإضاءة والتكييف والستائر عبر منصات موحدة وتطبيقات الجوال، والربط الذكي المستند للحساسات البيئية وحساسات الحركة لتفعيل السيناريوهات الأمنية والتشغيلية تلقائياً لتقليل التدخل البشري وتوفير الطاقة.</p>
+            <p class="lang-en">Complete smart home and building solutions for lighting, HVAC, and blinds via unified platforms and mobile apps, with sensor-based automation for security and operational scenarios that save energy.</p>
+          </article>
+          <article class="eco reveal delay-2">
+            <h3><span class="lang-ar">الأنظمة الصوتية والمرئية</span><span class="lang-en">Audio &amp; Visual Systems</span></h3>
+            <p class="lang-ar">تصميم ونشر أنظمة النداء العام والصوتيات الاحترافية للمساحات الكبيرة وغرف الاجتماعات والمرافق لضمان وضوح الصوت وخفض التشويش وبث المحتوى المرئي وإدارته مركزياً بدقة.</p>
+            <p class="lang-en">Design and deployment of professional Public Address and sound systems for large spaces and meeting rooms, ensuring clarity, noise reduction, and centrally managed visual content broadcasting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="lang-ar">لماذا يختارنا عملاؤنا</span><span class="lang-en">Why Our Clients Choose Us</span></p>
+          <h2>
+            <span class="lang-ar">موثوقية عالمية وخبرة ميدانية وطنية</span>
+            <span class="lang-en">Global reliability with national field expertise</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-ar">نجمع بين موثوقية الشراكات العالمية والخبرة الميدانية الوطنية لنمنح منشأتك حماية تتوارثها الأجيال.</span>
+            <span class="lang-en">Because we combine the reliability of global partnerships with skilled national field expertise, giving your facility protection inherited by generations.</span>
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why reveal">
+            <h3><span class="lang-ar">شراكات واعتمادات عالمية موثوقة</span><span class="lang-en">Global Partnerships &amp; Accreditations</span></h3>
+            <p class="lang-ar">نرتكز على كبار الموردين الدوليين ونلتزم التزاماً صارماً بكافة المعايير والاشتراطات الفنية والتنظيمية بالسوق السعودي.</p>
+            <p class="lang-en">We rely on trusted partnerships with major international suppliers and adhere strictly to elite technical and regulatory requirements in the Saudi market.</p>
+          </article>
+          <article class="why reveal delay-1">
+            <h3><span class="lang-ar">سجل حافل وإنجازات مثبتة</span><span class="lang-en">A Proven Track Record</span></h3>
+            <p class="lang-ar">نمتلك خبرة عملية واسعة في إدارة وتنفيذ المشاريع النوعية المعقدة وتسليمها بأعلى مستويات الجودة وفي أوقات قياسية.</p>
+            <p class="lang-en">Deep experience managing and executing complex qualitative projects at the highest quality levels within record timeframes.</p>
+          </article>
+          <article class="why reveal delay-2">
+            <h3><span class="lang-ar">علاقات مستدامة ودعم مستمر</span><span class="lang-en">Sustained Relationships &amp; Support</span></h3>
+            <p class="lang-ar">لا تنتهي مهمتنا بتسليم المشروع بل نرافق العميل برعاية كاملة عبر خدمات دعم فني وصيانة ممتدة تعزز الثقة والشراكة.</p>
+            <p class="lang-en">Our mission does not end upon delivery; we accompany projects with full care through technical support and extended maintenance.</p>
+          </article>
+          <article class="why reveal">
+            <h3><span class="lang-ar">مرونة تشغيلية وتواصل سلس</span><span class="lang-en">Operational Flexibility &amp; Communication</span></h3>
+            <p class="lang-ar">نوفر تجربة تعامل واضحة ومباشرة واستجابة فورية لمتطلبات شركائنا في شتى مراحل العمل التشغيلي.</p>
+            <p class="lang-en">Transparent, direct communication with immediate response to partners' requirements across operational stages.</p>
+          </article>
+          <article class="why reveal delay-1 why--wide">
+            <h3><span class="lang-ar">حلول هندسية متكاملة</span><span class="lang-en">Comprehensive Engineering Solutions</span></h3>
+            <p class="lang-ar">نغطي دورة حياة المشروع بأكملها بدءاً من المسح والدراسة الهندسية والتصميم مروراً بالتوريد والتركيب وصولاً للتشغيل الفعلي مما يختصر الجهد والوقت على العميل.</p>
+            <p class="lang-en">We manage the entire project lifecycle — from surveying and engineering studies through supply, installation, and commissioning — saving time and effort for the client.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS & CLIENTS -->
+    <section class="section section--alt" id="partners">
+      <div class="container">
+        <div class="duo duo--partners">
+          <article class="panel reveal">
+            <p class="eyebrow"><span class="lang-ar">شركاء النجاح</span><span class="lang-en">Success Partners</span></p>
+            <h2>
+              <span class="lang-ar">شراكات استراتيجية مع نخبة الموردين</span>
+              <span class="lang-en">Strategic partnerships with elite suppliers</span>
+            </h2>
+            <p class="lang-ar">نفخر بشراكاتنا الاستراتيجية مع نخبة من الموردين والشركات المعتمدة، والتي تمثل ركيزة أساسية في دعم جودة ما نقدمه من حلول وخدمات. أسهمت هذه الشراكات في تعزيز قدراتنا التنفيذية وتوفير منتجات وتقنيات موثوقة، وتمكيننا من تلبية متطلبات مشاريعنا وفق أعلى معايير الجودة والأداء — مثل شركة أترونيكا الأوكرانية وشركة Atis العالمية.</p>
+            <p class="lang-en">We pride ourselves on strategic partnerships with approved global manufacturers and suppliers who support the quality of our solutions — including Atronika and Atis — enhancing execution capabilities with certified, highly reliable technologies.</p>
+            <div class="partner-pills" aria-label="Partners">
+              <span>Atronika</span>
+              <span>Atis</span>
+            </div>
+          </article>
+          <article class="panel reveal delay-1">
+            <p class="eyebrow"><span class="lang-ar">أبرز عملائنا</span><span class="lang-en">Prominent Clients</span></p>
+            <h2>
+              <span class="lang-ar">ثقة عبر قطاعات متعددة</span>
+              <span class="lang-en">Trusted across diverse sectors</span>
+            </h2>
+            <p class="lang-ar">تحظى حلولنا وخدماتنا بثقة عملائنا من مختلف القطاعات، وهو ما يعكس جودة أعمالنا واعتمادية ما نقدمه والعلاقات المهنية المستدامة التي نحرص على بنائها وتعزيزها.</p>
+            <p class="lang-en">Our solutions enjoy the trust of clients across diverse sectors, reflecting the quality of our operations, the reliability of our deliverables, and sustainable professional relationships.</p>
+            <ul class="client-list">
+              <li><span class="lang-ar">بنك الرياض</span><span class="lang-en">Riyadh Bank</span></li>
+              <li><span class="lang-ar">وزارة الإعلام</span><span class="lang-en">Ministry of Media</span></li>
+              <li><span class="lang-ar">مطار الرياض</span><span class="lang-en">Riyadh Airport</span></li>
+              <li><span class="lang-ar">مطار الدمام</span><span class="lang-en">Dammam Airport</span></li>
+              <li><span class="lang-ar">مطار جازان</span><span class="lang-en">Jazan Airport</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="lang-ar">أبرز المشاريع</span><span class="lang-en">Our Key Projects</span></p>
+          <h2>
+            <span class="lang-ar">مساهمات نوعية تضع الجودة والابتكار أساساً</span>
+            <span class="lang-en">Qualitative contributions founded on quality and innovation</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-ar">نفخر بمساهمتنا في مشاريع نوعية عبر قطاعات متعددة واضعين الجودة والابتكار أساساً لكل إنجاز نحققه.</span>
+            <span class="lang-en">We take pride in our qualitative contributions across multiple vital sectors, placing quality and innovation as the absolute foundation for every achievement.</span>
+          </p>
+        </div>
+
+        <div class="project-stack">
+          <article class="project reveal">
+            <div class="project__visual project__visual--airport" loading="lazy" aria-hidden="true"></div>
+            <div class="project__body">
+              <p class="eyebrow"><span class="lang-ar">مشاريع المطارات</span><span class="lang-en">Airport Projects</span></p>
+              <h3>
+                <span class="lang-ar">حيث تلتقي السرعة الفائقة بالأمان المطلق</span>
+                <span class="lang-en">Where rapid speed meets absolute safety</span>
+              </h3>
+              <p class="lang-ar">في بيئة المطارات المتسارعة لا مجال للخطأ أو التأخير. من هذا المنطلق نضع كامل خبرتنا لابتكار بنية تحتية رقمية متكاملة تضمن تدفق البيانات بسرعة فائقة وحماية المنشأة بأنظمة أمنية ذكية ومستقبلية. جعلتنا احترافيتنا العالية في التوريد والتنفيذ الخيار الأول والاسم الأبرز في طليعة قطاع التقنية الأمنية للمطارات — كما تجسد في مشاريعنا المتميزة بنجاح في مطار الرياض ومطار الدمام ومطار جازان.</p>
+              <p class="lang-en">In fast-paced airport environments, there is zero room for error or delay. We innovate comprehensive digital infrastructure that guarantees rapid data flow and secures facilities with smart security systems — epitomized by successful projects at Riyadh, Dammam, and Jazan Airports.</p>
+            </div>
+          </article>
+
+          <article class="project project--reverse reveal">
+            <div class="project__visual project__visual--bank" aria-hidden="true"></div>
+            <div class="project__body">
+              <p class="eyebrow"><span class="lang-ar">مشاريع البنوك</span><span class="lang-en">Banking Projects</span></p>
+              <h3>
+                <span class="lang-ar">حماية الأصول الرقمية وتمكين المعاملات المليارية بأعلى درجات الأمان</span>
+                <span class="lang-en">Securing digital assets &amp; enabling multi-billion transactions</span>
+              </h3>
+              <p class="lang-ar">عند بناء البنية التحتية والشبكات للقطاع المصرفي ندرك تماماً أن الثانية الواحدة تصنع فارقاً، وأن أمن البيانات هو عصب الثقة. لذلك نحرص على تزويد البنوك بشبكات فائقة السرعة وحلول أمنية متكاملة ومتقدمة تضمن استمرارية الأعمال وحمايتها من أدق المخاطر الرقمية والفيزيائية. خبرتنا العميقة في التوريد والتنفيذ جعلتنا الشريك التقني الأول لإنجاز مشاريع الشبكات والأنظمة الأمنية الحساسة لعدد من كبرى المؤسسات المالية أبرزها بنك الرياض.</p>
+              <p class="lang-en">When building banking infrastructure, a single second makes a massive difference and data security is the backbone of trust. We supply ultra-high-speed networks and advanced security solutions that ensure continuity — positioning us as the primary technical partner for institutions such as Riyadh Bank.</p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__visual project__visual--gov" aria-hidden="true"></div>
+            <div class="project__body">
+              <p class="eyebrow"><span class="lang-ar">المشاريع الحكومية</span><span class="lang-en">Government Projects</span></p>
+              <h3>
+                <span class="lang-ar">تأمين البنية التحتية لسيادة الوطن وبناء المنظومات الرقمية</span>
+                <span class="lang-en">Securing the nation's infrastructure</span>
+              </h3>
+              <p class="lang-ar">عند تمكين المنظومات الحكومية ندرك تماماً المسؤولية الوطنية الكامنة وراء استمرارية الاتصال وأمن تدفق البيانات الرسمية. لذلك نلتزم بتقديم شبكات متطورة فائقة الكفاءة وحلول أمنية استباقية تحمي الأصول المعرفية وتدعم الكوادر الوطنية في أداء مهامها الحيوية بكل موثوقية. ريادتنا في التوريد والتنفيذ جعلتنا الخيار المعتمد لبناء وتأمين الأنظمة الحساسة لعدد من كبرى الجهات الرسمية في المملكة أبرزها وزارة الإعلام.</p>
+              <p class="lang-en">When empowering government systems, we recognize our national responsibility for communication continuity and secure official data flow. We deliver efficient networks and proactive security solutions — trusted by major entities including the Ministry of Media.</p>
+              <blockquote class="project__quote">
+                <span class="lang-ar">«بين الرؤية والتنفيذ، نصنع قصص نجاح تترجم الطموح إلى واقع وتترك بصمة تتجاوز حدود المكان والزمان.»</span>
+                <span class="lang-en">“Between vision and execution, we craft success stories that translate ambition into reality, leaving an imprint that transcends the boundaries of time and space.”</span>
+              </blockquote>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact-grid reveal">
+        <div>
+          <p class="eyebrow"><span class="lang-ar">معلومات التواصل</span><span class="lang-en">Contact Information</span></p>
+          <h2>
+            <span class="lang-ar">الرياض — المملكة العربية السعودية</span>
+            <span class="lang-en">Riyadh — Kingdom of Saudi Arabia</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-ar">شركة الموسى للتقنية وخدمات الأنظمة الأمنية (إحدى شركات مجموعة الموسى المحدودة)</span>
+            <span class="lang-en">Al-Mousa for Technology and Security Systems Services Co. — A Subsidiary of Al-Mousa Group Co. Ltd.</span>
+          </p>
+        </div>
+        <dl class="contact-meta">
+          <div>
+            <dt><span class="lang-ar">المنشأة</span><span class="lang-en">Entity</span></dt>
+            <dd>
+              <span class="lang-ar">شركة الموسى للتقنية وخدمات الأنظمة الأمنية</span>
+              <span class="lang-en">Al-Mousa for Technology and Security Systems Services Co.</span>
+            </dd>
+          </div>
+          <div>
+            <dt><span class="lang-ar">الموقع</span><span class="lang-en">Location</span></dt>
+            <dd>
+              <span class="lang-ar">الرياض — المملكة العربية السعودية</span>
+              <span class="lang-en">Riyadh — Kingdom of Saudi Arabia</span>
+            </dd>
+          </div>
+          <div>
+            <dt><span class="lang-ar">الإصدار</span><span class="lang-en">Profile Year</span></dt>
+            <dd>2026</dd>
+          </div>
+          <div>
+            <dt><span class="lang-ar">التأسيس</span><span class="lang-en">Founded</span></dt>
+            <dd>2021</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-brand">
+        <img src="./assets/brand/logo.svg" width="40" height="40" alt="" loading="lazy">
+        <div>
+          <strong class="lang-ar">الموسى للتقنية</strong>
+          <strong class="lang-en">AL-MOUSA FOR TECHNOLOGY</strong>
+          <p class="lang-ar">مجموعة الموسى المحدودة · الملف المؤسسي ٢٠٢٦</p>
+          <p class="lang-en">Al-Mousa Group Co. Ltd. · Corporate Profile 2026</p>
+        </div>
+      </div>
+      <p class="footer-copy">
+        <span class="lang-ar">© ٢٠٢٦ شركة الموسى للتقنية وخدمات الأنظمة الأمنية. جميع الحقوق محفوظة.</span>
+        <span class="lang-en">© 2026 Al-Mousa for Technology and Security Systems Services Co. All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="./script.js" defer></script>
 </body>
 </html>
